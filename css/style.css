@@ -1,0 +1,100 @@
+/** @format */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-color: #333;
+}
+
+body {
+	font-family: 'Signika', sans-serif;
+	background: #1c92d2; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to left,
+		#f2fcfe,
+		#1c92d2
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to left,
+		#f2fcfe,
+		#1c92d2
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-size: 1.8rem;
+	color: var(--primary-color);
+}
+
+#form {
+	text-align: center;
+	margin-top: 2rem;
+}
+
+#form h3 {
+	margin-bottom: 2rem;
+}
+
+input {
+	width: 25%;
+	height: 3rem;
+	font-size: 1.5rem;
+	padding: 0.5rem;
+	margin: 1.6rem;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid var(--primary-color);
+	border-radius: 2px;
+	background-color: transparent;
+	color: #555;
+}
+
+::placeholder {
+	text-align: right;
+}
+
+button {
+	font-size: 1.6rem;
+	padding: 0.5rem;
+	border-radius: 4px;
+	letter-spacing: 1px;
+	border: 2px solid var(--primary-color);
+	transition: all 0.3s;
+	margin: 2.9rem 1rem 1rem;
+	color: #ddd;
+	background-color: var(--primary-color);
+}
+
+button:hover,
+button:active {
+	background-color: #222;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+.result,
+.output {
+	margin: 1.3rem 0;
+}
+
+footer {
+	font-size: 1.5rem;
+	text-align: center;
+	position: fixed;
+	bottom: 2%;
+	left: 42.8%;
+}
+
+@media (max-width: 700px) {
+	input {
+		width: 50%;
+	}
+
+	footer {
+		left: 24%;
+	}
+}
